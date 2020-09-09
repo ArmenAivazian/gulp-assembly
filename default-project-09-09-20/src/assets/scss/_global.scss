@@ -1,0 +1,22 @@
+body {
+    font-family: $default-font;
+    font-display: swap;
+    color: $mainColor;
+    a {
+        color: $mainColor;
+    }
+}
+
+main {
+    min-height: $minHeightMain;
+}
+
+.container {
+    max-width: calc(#{$content-width} + 20px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media(max-width: 500px) {
+        padding: 0 20px;
+    }
+}
