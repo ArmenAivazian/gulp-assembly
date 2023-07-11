@@ -1,0 +1,4 @@
+:root {
+  @include theme-colors($dflt-txt-clr: #{$dflt-txt-clr});
+  @include theme-colors($dflt-bg: #{$dflt-bg});
+}

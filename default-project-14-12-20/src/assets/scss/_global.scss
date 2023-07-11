@@ -1,0 +1,56 @@
+body {
+  font-family: $default-font;
+  color: $mainColor;
+  font-weight: $mainWeight;
+  font-size: $mainSize;
+  padding-top: $heightHeader;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  height: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  a,
+  button,
+  label,
+  p {
+    background-color: transparent;
+    color: $mainColor;
+    font-weight: $mainWeight;
+    font-size: $mainSize;
+    transition: 0.3s;
+  }
+  img {
+    // max-width: 100%;
+    // width: 100%;
+    object-fit: cover;
+  }
+  &.block {
+    overflow: hidden;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: $heightHeader;
+}
+main {
+  flex-grow: 1;
+  //   min-height: $minHeightMain;
+}
+
+.container {
+  max-width: calc(#{$content-width} + 20px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (max-width: 500px) {
+    padding: 0 20px;
+  }
+  &--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}

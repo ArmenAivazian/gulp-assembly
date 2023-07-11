@@ -1,0 +1,57 @@
+body {
+  font-family: $default-font;
+  color: $mainColor;
+  font-weight: $mainWeight;
+  font-size: $mainSize;
+  padding-top: $heightHeader;
+  height: 100%;
+  a,
+  button,
+  label,
+  p {
+    background-color: transparent;
+    color: $mainColor;
+    font-weight: $mainWeight;
+    font-size: $mainSize;
+    transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  svg,
+  path {
+    transition: 0.3s;
+  }
+  img {
+    object-fit: cover;
+  }
+  &.block {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: $heightHeader;
+}
+
+.container {
+  $padding: 20px;
+
+  max-width: #{($padding * 2) + $content-width};
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $padding;
+  padding-right: $padding;
+
+  &-flex {
+    display: flex;
+    justify-content: space-between;
+    &--full {
+      align-items: center;
+    }
+  }
+}
+.button-position {
+  display: flex;
+  align-items: center;
+}

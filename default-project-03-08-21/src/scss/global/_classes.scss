@@ -1,0 +1,80 @@
+.main {
+  overflow: hidden;
+}
+.d-f {
+  display: flex;
+}
+.jc {
+  &-sb {
+    justify-content: space-between;
+  }
+  &-c {
+    justify-content: center;
+  }
+  &-fe {
+    justify-content: flex-end;
+  }
+}
+.ai {
+  &-c {
+    align-items: center;
+  }
+  &-fe {
+    align-items: flex-end;
+  }
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bg-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.container {
+  max-width: #{($padding-container-desktop * 2) + $content-width};
+  width: 100%;
+  margin: 0 auto;
+  padding-left: $padding-container-desktop;
+  padding-right: $padding-container-desktop;
+  @include media("tb") {
+    padding-left: $padding-container-tab;
+    padding-right: $padding-container-tab;
+  }
+  @include media("mb") {
+    padding-left: $padding-container-mobile;
+    padding-right: $padding-container-mobile;
+  }
+}
+.icon-size {
+  flex: 0 0 auto;
+  min-width: auto;
+}
+.hidden {
+  display: none!important;
+}
+.frst-sctn {
+  @include media("tb") {
+  }
+  @include media("mb") {
+  }
+}
+.dflt-sctn {
+  @include media("tb") {
+  }
+  @include media("mb") {
+  }
+}
+.title-tp-1 {
+ 
+}
+.text-tp-1{
+
+}

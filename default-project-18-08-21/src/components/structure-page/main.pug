@@ -1,0 +1,19 @@
+mixin main-structure-top()
+    <!DOCTYPE html>
+    <html lang="ru">
+    include head/head.pug
+
+    <body>
+
+        //- include ../blocks/modal/modal.pug
+
+        include header/header.pug
+        <main class="main">
+        
+
+mixin main-structure-bottom()
+    </main>
+        include footer/footer.pug
+        include scripts/scripts.pug
+    </body>
+    </html>

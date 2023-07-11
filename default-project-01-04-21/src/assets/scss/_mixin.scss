@@ -1,0 +1,14 @@
+@mixin const-size($size, $height: false, $flex: true) {
+  width: $size;
+  min-width: $size;
+  @if $flex {
+    flex: 0 0 $size;
+  }
+  @if $height {
+    height: $size;
+  }
+}
+@mixin trust-vh($minus: 0) {
+  height: 100vh;
+  height: calc((var(--vh, 1vh) * 100) - #{$minus}px);
+}
